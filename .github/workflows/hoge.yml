@@ -1,0 +1,19 @@
+name: Github Actions Demo
+
+on:
+  pull_request:
+    branches:
+      - dev
+
+jobs:
+  echo_hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "ジョブテスト"
+        run: echo "Nice to meet you!!"
+        
+  echo_goodbye:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "ジョブテスト2"
+        run: echo "Good Bye!!"
